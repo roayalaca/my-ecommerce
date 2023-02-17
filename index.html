@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logotipo">Bandhan</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu"> 
+                <i class="bi bi-x-circle"></i>
+            </button>
+            <header>
+                <h1 class="logotipo">Bandhan</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="general" class="boton-menu boton-categoria active"><i class='bx bxs-moon'></i></i> Tienda general</button>
+                    </li>
+                    <li>
+                        <button id="libreria" class="boton-menu boton-categoria"><i class='bx bxs-magic-wand'></i> Librería</button>
+                    </li>
+                    <li>
+                        <button id="cuarzos" class="boton-menu boton-categoria"><i class='bx bxs-magic-wand'></i> Cuarzos</button>
+                    </li>
+                    <li>
+                        <button id="pinturas" class="boton-menu boton-categoria"><i class='bx bxs-magic-wand'></i>Pinturas</button>
+                    </li>
+                    <li>
+                        <button id="sudaderas" class="boton-menu boton-categoria"><i class='bx bxs-magic-wand'></i>Sudaderas</button>
+                    </li>
+                    <li>
+                        <button id="mochilas" class="boton-menu boton-categoria"><i class='bx bxs-magic-wand'></i>Mochilas</button>
+                    </li>
+            
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class='bx bxs-cart'></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2023 Bandhan</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal"> Tienda general </h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+            </div>
+        </main>
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="./menu.js"></script>
+    
+</body>
+</html>
